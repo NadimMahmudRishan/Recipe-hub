@@ -62,6 +62,10 @@ const WannaCooke = ({ wannaCook, handelCook, cooked, totalTime, totalCal }) => {
             </tr>
           ))}
         </table>
+        <div className="text-[#282828CC] text-sm font-medium my-5 flex justify-around">
+          <p>Total Time = {totalTime} minutes</p>
+          <p>Total Calories = {totalCal} calories</p>
+        </div>
       </div>
     </div>
   );

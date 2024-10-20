@@ -34,8 +34,10 @@ const Recipes = () => {
   const [totalCal, setTotalCal] = useState(0);
 
   const calculate = (time, cal) => {
-    setTotalCal(totalCal + cal);
-    setTotalTime(totalTime + time);
+    const t = parseInt(time);
+    const c = parseInt(cal);
+    setTotalCal(totalCal + c);
+    setTotalTime(totalTime + t);
   };
 
   return (
