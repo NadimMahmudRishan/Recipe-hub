@@ -38,10 +38,12 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="md:text-2xl text-md md:font-bold font-semibold">Recipe Hub</a>
+          <a className="md:text-2xl text-md md:font-bold font-semibold">
+            Recipe Hub
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-[#150B2BB2]">
             <li>
               <a>Home</a>
             </li>
