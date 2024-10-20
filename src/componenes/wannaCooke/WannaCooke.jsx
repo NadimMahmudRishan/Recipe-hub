@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const WannaCooke = ({ wannaCook }) => {
+const WannaCooke = ({ wannaCook, handelCook, cooked }) => {
   return (
     <div className=" w-2/5 ">
       <div className="card bg-base-100 w-[480px] shadow-xl border-[1px] border-[#28282833]">
@@ -27,12 +27,35 @@ const WannaCooke = ({ wannaCook }) => {
               <td>
                 {" "}
                 <button
-                  onClick={() => handelCook(recipe)}
+                  onClick={() => handelCook(cook)}
                   className="px-2 py-1 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-sm font-normal "
                 >
                   Preparing
                 </button>
               </td>
+            </tr>
+          ))}
+        </table>
+        <h2 className="m-4 text-2xl font-semibold">Currently cooking: 02</h2>
+        <hr className=" text-[#28282826] w-2/3 mx-auto " />
+        <table>
+          <th className="flex justify-between  text-[#878787] text-sm font-medium">
+            <td className="w-12"></td>
+            <td className="w-12">Name</td>
+            <td className="w-12">Time</td>
+            <td className="w-12">Calories</td>
+            <td className="w-12"></td>
+          </th>
+          {wannaCook.map((cook, xid) => (
+            <tr
+              key={xid}
+              className="flex justify-between items-center bg-[#28282808] my-1 p-1 text-[#878787] text-sm font-normal"
+            >
+              <td className="font-bold text-[#282828CC] w-12">{xid + 1}</td>
+              <td className="w-12">{cook.recipe_name}</td>
+              <td className="w-12">{cook.preparing_time} min</td>
+              <td className="w-12">{cook.calories} cal</td>
+              <td className="w-12"></td>
             </tr>
           ))}
         </table>
@@ -43,5 +66,7 @@ const WannaCooke = ({ wannaCook }) => {
 
 export default WannaCooke;
 WannaCooke.PropTypes = {
-  wannaCook: PropTypes.array.isRequired,
+  recipe: PropTypes.array.isRequired,
+  cooked: PropTypes.array.isRequired,
+  handelCook: PropTypes.func.isRequired
 };

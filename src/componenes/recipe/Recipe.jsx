@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { TfiTimer } from "react-icons/tfi";
 import { AiOutlineFire } from "react-icons/ai";
 
-const recipe = ({ recipe, handelCook }) => {
+const recipe = ({ recipe, handelWallaCook }) => {
   const {
     recipe_image,
     recipe_name,
@@ -46,8 +46,8 @@ const recipe = ({ recipe, handelCook }) => {
           </div>
           <div className="card-actions">
             <button
-              onClick={()=>handelCook(recipe)}
-              className="px-4 py-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium "
+              onClick={() => handelWallaCook(recipe)}
+              className="px-4 py-2 rounded-3xl bg-[#0BE58A] text-[#150B2B] text-lg font-medium hover:bg-[#51ffa8] "
             >
               Want to Cook
             </button>
@@ -61,5 +61,5 @@ const recipe = ({ recipe, handelCook }) => {
 export default recipe;
 recipe.PropTypes = {
   recipe: PropTypes.object.isRequired,
-  handelCook: PropTypes.func.isRequired
+  handelWallaCook: PropTypes.func.isRequired,
 };

@@ -12,9 +12,14 @@ const Recipes = () => {
   }, []);
 
   const [wannaCook, setWannaCook] = useState([]);
-  const handelCook = (recipe) => {
+  const handelWallaCook = (recipe) => {
     const newWannaCook = [...wannaCook, recipe];
     setWannaCook(newWannaCook);
+  };
+  const [Cook, setCook] = useState([]);
+  const handelCook = (recipe) => {
+    const newCook = [...Cook, recipe];
+    setCook(newCook);
   };
 
   return (
@@ -24,12 +29,16 @@ const Recipes = () => {
           <Recipe
             key={recipe.recipe_id}
             recipe={recipe}
-            handelCook={handelCook}
+            handelWallaCook={handelWallaCook}
           ></Recipe>
         ))}
       </div>
       <div>
-        <WannaCooke wannaCook={wannaCook}></WannaCooke>
+        <WannaCooke
+          wannaCook={wannaCook}
+          handelCook={handelCook}
+          cooked={Cook}
+        ></WannaCooke>
       </div>
     </div>
   );
