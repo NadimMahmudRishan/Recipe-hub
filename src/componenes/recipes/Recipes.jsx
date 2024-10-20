@@ -41,8 +41,8 @@ const Recipes = () => {
   };
 
   return (
-    <div className="flex justify-between">
-      <div className=" w-3/5 grid grid-cols-2 gap-5 ">
+    <div className="flex md:flex-row flex-col-reverse md:justify-between justify-center">
+      <div className=" w-3/5 grid grid-cols-1 md:grid-cols-2 gap-5 ">
         {recipes.map((recipe) => (
           <Recipe
             key={recipe.recipe_id}

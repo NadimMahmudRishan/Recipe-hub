@@ -13,7 +13,7 @@ const recipe = ({ recipe, handelWallaCook }) => {
   } = recipe;
   return (
     <div>
-      <div className="card bg-base-100 md:w-[350px] shadow-xl border-[1px] border-[#28282833]">
+      <div className="card bg-base-100 md:w-[350px] w-80 mx-auto shadow-xl border-[1px] border-[#28282833]">
         <figure className="px-6 pt-6">
           <img src={recipe_image} alt="recipe_image" className="rounded-xl" />
         </figure>

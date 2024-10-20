@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-neutral-content text-center">
           <div className="max-w-full">
-            <h1 className="mb-4 md:mb-8 text-2xl md:text-5xl font-bold">
+            <h1 className="mb-4 md:mb-8 text-xl md:text-5xl font-bold">
               Discover an exceptional cooking <br />
               class tailored for you!
             </h1>
