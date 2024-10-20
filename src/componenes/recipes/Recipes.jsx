@@ -11,7 +11,7 @@ const Recipes = () => {
       .then((data) => setRecipes(data));
   }, []);
   return (
-    <div>
+    <div className="flex justify-between">
       <div className=" w-3/5 grid grid-cols-2 gap-5 ">
         {recipes.map((recipe) => (
           <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>
