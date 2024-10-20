@@ -16,8 +16,15 @@ const Recipes = () => {
     const newWannaCook = [...wannaCook, recipe];
     setWannaCook(newWannaCook);
   };
+
+  const handelRemove = (recipe) => {
+    const newWannaCook = wannaCook.filter((items) => items !== recipe);
+    setWannaCook(newWannaCook);
+  };
+
   const [Cook, setCook] = useState([]);
   const handelCook = (recipe) => {
+    handelRemove(recipe);
     const newCook = [...Cook, recipe];
     setCook(newCook);
   };

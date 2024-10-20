@@ -9,22 +9,23 @@ const WannaCooke = ({ wannaCook, handelCook, cooked }) => {
         </h2>
         <hr className=" text-[#28282826] w-2/3 mx-auto " />
         <table>
-          <th className="flex justify-center gap-12 text-[#878787] text-sm font-medium">
+          <th className="flex justify-between text-[#878787] text-sm font-medium">
+            <td className="w-3"></td>
             <td className="w-12">Name</td>
             <td className="w-12">Time</td>
             <td className="w-12">Calories</td>
-            <td className="w-3"></td>
+            <td className="w-28"></td>
           </th>
           {wannaCook.map((cook, xid) => (
             <tr
               key={xid}
-              className="flex justify-center items-center gap-10 bg-[#28282808] my-1 p-1 text-[#878787] text-sm font-normal"
+              className="flex justify-between items-center bg-[#28282808] my-1 p-1 text-[#878787] text-sm font-normal"
             >
-              <td className="font-bold text-[#282828CC]">{xid + 1}</td>
+              <td className="font-bold text-[#282828CC] w-3 px-5">{xid + 1}</td>
               <td className="w-12">{cook.recipe_name}</td>
               <td className="w-12">{cook.preparing_time} min</td>
               <td className="w-12">{cook.calories} cal</td>
-              <td>
+              <td className="w-28">
                 {" "}
                 <button
                   onClick={() => handelCook(cook)}
@@ -36,7 +37,9 @@ const WannaCooke = ({ wannaCook, handelCook, cooked }) => {
             </tr>
           ))}
         </table>
-        <h2 className="m-4 text-2xl font-semibold">Currently cooking: 02</h2>
+        <h2 className="m-4 text-2xl font-semibold">
+          Currently cooking: {cooked.length}
+        </h2>
         <hr className=" text-[#28282826] w-2/3 mx-auto " />
         <table>
           <th className="flex justify-between  text-[#878787] text-sm font-medium">
@@ -46,7 +49,7 @@ const WannaCooke = ({ wannaCook, handelCook, cooked }) => {
             <td className="w-12">Calories</td>
             <td className="w-12"></td>
           </th>
-          {wannaCook.map((cook, xid) => (
+          {cooked.map((cook, xid) => (
             <tr
               key={xid}
               className="flex justify-between items-center bg-[#28282808] my-1 p-1 text-[#878787] text-sm font-normal"
