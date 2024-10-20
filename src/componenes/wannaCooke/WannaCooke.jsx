@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-const WannaCooke = ({ wannaCook, handelCook, cooked }) => {
+const WannaCooke = ({ wannaCook, handelCook, cooked, totalTime, totalCal }) => {
   return (
-    <div className=" w-2/5 ">
+    <div className=" w-2/5 py-10">
       <div className="card bg-base-100 w-[480px] shadow-xl border-[1px] border-[#28282833]">
         <h2 className="m-4 text-2xl font-semibold">
           Want to cook: {wannaCook.length}
@@ -71,5 +71,7 @@ export default WannaCooke;
 WannaCooke.PropTypes = {
   recipe: PropTypes.array.isRequired,
   cooked: PropTypes.array.isRequired,
-  handelCook: PropTypes.func.isRequired
+  handelCook: PropTypes.func.isRequired,
+  totalCal: PropTypes.number.isRequired,
+  totalTime: PropTypes.number.isRequired,
 };

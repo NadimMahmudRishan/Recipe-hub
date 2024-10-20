@@ -27,6 +27,15 @@ const Recipes = () => {
     handelRemove(recipe);
     const newCook = [...Cook, recipe];
     setCook(newCook);
+    calculate(recipe.preparing_time, recipe.calories);
+  };
+
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCal, setTotalCal] = useState(0);
+
+  const calculate = (time, cal) => {
+    setTotalCal(totalCal + cal);
+    setTotalTime(totalTime + time);
   };
 
   return (
@@ -45,6 +54,8 @@ const Recipes = () => {
           wannaCook={wannaCook}
           handelCook={handelCook}
           cooked={Cook}
+          totalTime={totalTime}
+          totalCal={totalCal}
         ></WannaCooke>
       </div>
     </div>
