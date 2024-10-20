@@ -22,11 +22,11 @@ const Banner = () => {
               Programmer.
             </p>
             <div className="flex gap-2 md:gap-5 justify-center">
-              <button className="px-2 md:px-5 py-1 md:py-4 font-bold rounded-3xl text-[#150B2B] bg-[#0BE58A] border-none md:text-xl text-sm hover:bg-white ">
+              <button className="px-2 md:px-5 py-1 md:py-4 font-bold rounded-3xl md:rounded-[30px] text-[#150B2B] bg-[#0BE58A] border-none md:text-xl text-sm hover:bg-white ">
                 Explore Now
               </button>
 
-              <button className="px-2 md:px-5 py-1 md:py-4 rounded-3xl md:text-xl text-sm font-bold bg-none border-white border-[1px] hover:bg-[#0BE58A] ">
+              <button className="px-2 md:px-5 py-1 md:py-4 rounded-3xl md:rounded-[30px] md:text-xl text-sm font-bold bg-none border-white border-[1px] hover:bg-[#0BE58A] ">
                 Our Feedback
               </button>
             </div>

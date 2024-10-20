@@ -1,0 +1,56 @@
+[
+  {
+    "recipe_id": "001",
+    "recipe_image": "https://i.ibb.co.com/PNXqBh1/delicious-lobster-gourmet-seafood.jpg",
+    "recipe_name": "Vegetable Medley",
+    "short_description": "A fresh medley of vegetables grilled to perfection.",
+    "ingredients": ["500 g mixed vegetables", "50 ml olive oil", "1 tsp salt", "1 tsp pepper"],
+    "preparing_time": "25",
+    "calories": "220"
+  },
+  {
+    "recipe_id": "002",
+    "recipe_image": "https://i.ibb.co/F6tqDCT/mid-shot-chef-holding-plate-with-pasta-making-ok-sign.jpg",
+    "recipe_name": "Creamy Pasta",
+    "short_description": "A rich and creamy pasta with a blend of herbs and spices.",
+    "ingredients": ["400 g pasta", "200 ml cream", "50 g parmesan", "100 g mushrooms"],
+    "preparing_time": "30",
+    "calories": "500"
+  },
+  {
+    "recipe_id": "003",
+    "recipe_image": "https://i.ibb.co/Bn8x9Gm/crispy-fried-chicken-plate-with-salad-carrot.jpg",
+    "recipe_name": "Crispy Fried Chicken",
+    "short_description": "Golden fried chicken served with fresh salad.",
+    "ingredients": ["600 g chicken", "100 g flour", "1 tsp salt", "1 tsp pepper", "200 ml oil"],
+    "preparing_time": "40",
+    "calories": "600"
+  },
+  {
+    "recipe_id": "004",
+    "recipe_image": "https://i.ibb.co/tm1wJbp/side-view-pilaf-with-stewed-beef-meat-plate.jpg",
+    "recipe_name": "Beef Pilaf",
+    "short_description": "Savory beef pilaf with aromatic spices and fluffy rice.",
+    "ingredients": ["300 g beef", "200 g rice", "1 onion", "2 carrots", "1 tsp cumin"],
+    "preparing_time": "50",
+    "calories": "450"
+  },
+  {
+    "recipe_id": "005",
+    "recipe_image": "https://i.ibb.co/y64MYkz/fresh-grill-bbq-chicken.jpg",
+    "recipe_name": "BBQ Chicken",
+    "short_description": "Grilled BBQ chicken with a smoky flavor.",
+    "ingredients": ["500 g chicken", "100 ml BBQ sauce", "1 tsp paprika", "1 tsp garlic powder"],
+    "preparing_time": "35",
+    "calories": "400"
+  },
+  {
+    "recipe_id": "006",
+    "recipe_image": "https://i.ibb.co/h2KLcd6/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table.jpg",
+    "recipe_name": "Penne Pasta with Chicken",
+    "short_description": "Penne pasta in a rich tomato sauce with tender chicken.",
+    "ingredients": ["400 g penne pasta", "200 g chicken", "150 ml tomato sauce", "1 onion", "50 g parmesan"],
+    "preparing_time": "30",
+    "calories": "520"
+  }
+]
